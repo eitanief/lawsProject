@@ -140,9 +140,9 @@ def compare_lex(item1, item2):
         return -1
     else:
         if item1["point headline"] > item2["point headline"]:
-            return 1
-        else:
             return -1
+        else:
+            return 1
 
 
 def sort_by_date(results):
