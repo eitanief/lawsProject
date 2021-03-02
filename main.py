@@ -5,6 +5,7 @@ import json
 from functools import cmp_to_key
 from YAP_Wrapper.yap_api import YapApi
 import compress_json
+from distance import levenshtein
 
 app = Flask(__name__)
 app.secret_key = "efrat and yuval"
@@ -139,10 +140,10 @@ def compare_lex(item1, item2):
     if search_word == item2["point headline"]:
         return -1
     else:
-        if item1["point headline"] > item2["point headline"]:
-            return 1
-        else:
+        if levenshtein(item1["point headline"]) < levenshtein(item2["point headline"]):
             return -1
+        else:
+            return 1
 
 
 def sort_by_date(results):
