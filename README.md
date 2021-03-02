@@ -36,6 +36,10 @@ Set $GOPATH environment variable to your workspace:
 <br>
 ```export GOPATH=path/to/yapproj```
 <br>
+in Windows use:
+<br>
+```set GOPATH=path/to/yapproj```
+<br>
 In the workspace directory create the src subdirectory:
  <br>
  ```mkdir src```
@@ -56,6 +60,7 @@ $ go get .
 $ go build .
 $ ./yap
 ./yap - invoke yap as a standalone app or as an api server
+if ./yap is not working use yap.exe api
 ```
 for more information about YAP:
 https://github.com/OnlpLab/yap?fbclid=IwAR2BILOpxFyF051OaA-NkOXUDrgpCBzktEp-3I_UXzRCV2Hp2Eaf7JAsZJI#running-yap-as-a-restful-service
