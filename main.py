@@ -139,7 +139,7 @@ def compare_lex(item1, item2):
     if search_word == item2["point headline"]:
         return -1
     else:
-        return item1["point headline"] - item2["point headline"]
+        return int(item1["point headline"]) - int(item2["point headline"])
 
 
 def sort_by_date(results):
