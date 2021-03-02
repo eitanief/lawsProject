@@ -140,7 +140,7 @@ def compare_lex(item1, item2):
     if search_word == item2["point headline"]:
         return -1
     else:
-        if levenshtein(item1["point headline"]) < levenshtein(item2["point headline"]):
+        if levenshtein(item1["point headline"], search_word) < levenshtein(item2["point headline"], search_word):
             return -1
         else:
             return 1
