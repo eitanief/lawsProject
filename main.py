@@ -141,9 +141,9 @@ def compare_lex(item1, item2):
         return -1
     else:
         if levenshtein(item1["point headline"], search_word) < levenshtein(item2["point headline"], search_word):
-            return -1
-        else:
             return 1
+        else:
+            return -1
 
 
 def sort_by_date(results):
