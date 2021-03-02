@@ -62,9 +62,9 @@ https://github.com/OnlpLab/yap?fbclid=IwAR2BILOpxFyF051OaA-NkOXUDrgpCBzktEp-3I_U
 ### Build and run application
 Build the image manually by cloning the Git repo.
 ```
-$ git clone https://github.com/eitanief/lawProject.git
+$ git clone https://github.com/eitanief/lawsProject.git
 ```
-Inside "lawProject" folder run:
+Inside "lawsProject" folder run:
 ```
 pip install -r requirements.txt
 ```
